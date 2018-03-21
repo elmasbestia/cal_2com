@@ -1,0 +1,73 @@
+/*  Gestión de proyectos Software con Git y GitHub
+    Universidad Politécnica de Madrid
+    Marzo 2018
+
+    P2P Módulo 2:
+*/
+
+Duplique el repositorio https://github.com/jquemada/cal_2com en su cuenta de gitHub usando el botón de fork.
+
+*Clonar dicha copia en un nuevo repositorio de trabajo en su ordenador local.
+
+*Añadir al fichero calculator.html una cabecera HTML (<h1>) al comienzo del body con su nombre y apellidos. Cree un nuevo commit en la rama master con esta modificación.
+
+Copiar la rama inverse del repositorio https://github.com/jquemada/cal_branches en su repositorio local. Integre en la rama inverse, la rama master. Integre también la rama master en la rama inverse. Subir ambas ramas al repositorio origen de la clonación.
+Desarrollo de la práctica
+
+Seguir los siguientes pasos para la realización de esta practica.
+
+*Paso 1) Copiar el repositorio https://github.com/jquemada/cal_2com en su cuenta de GitHub
+usando el botón de Fork.
+
+El nombre del usuario en Github donde se clona la cuenta debe incluir el nombre y apellidos, o las
+iniciales de la persona que realiza la entrega.
+
+*Paso 2) Clonar el repositorio <su _cuenta>/cal_2com (de su cuenta en GitHub) en su ordenador local.
+
+Sugerencia de comandos a utilizar
+*$ git clone https://github.com/<su _cuenta>/cal_2com
+
+*Paso 3) Entrar en el directorio de trabajo del nuevo repositorio clonado y añadir al fichero calculator.html, en el body del HTML, un título <h1> con los nombres de la pareja que realiza la entrega. Cerrar un nuevo commit con esta modificación.
+
+Sugerencia de comandos a utilizar (además del editor):
+$ cd cal_2com
+$ git status …
+$ git log …
+$ git diff ….
+$ git add .
+$ git commit -m “Calculadora: Autores”
+
+Paso 4) Copiar la rama remota inverse del repositorio https://github.com/jquemada/cal_branches como una rama local con git fetch y la refspec correspondiente.
+
+Sugerencia de comandos a utilizar:
+$ git fetch <remote> <refspec>
+$ git branch …
+
+Paso 5) Integrar en la rama copiada inverse, copiada en el repositorio local, la rama master con
+(git merge) e identificar el nuevo commit con el mensaje “Integrar inverse”.
+
+Sugerencia de comandos a utilizar:
+$ git merge -m “Integrar inverse” …
+$ git commit -m “Integrar inverse” …
+$ git branch …
+$ git log --graph …
+
+Paso 6) Integrar en master la rama inverse del repositorio local (integrada en el paso anterior) con git merge también.
+
+Sugerencia de comandos a utilizar:
+$ git merge …
+$ git branch …
+$ git log --graph …
+
+Paso 7) Subir al repositorio origin (origen de la clonación) las dos ramas locales (master e inverse) con git push.
+
+Sugerencia de comandos a utilizar:
+$ git branch …
+$ git push --all …
+
+Paso 8) Entregar en MiriadaX el nombre de su cuenta en GitHub donde ha clonado con fork el
+repositorio cal_2com y donde ha actualizado todas las modificaciones solicitadas.
+Entrega y evaluación
+
+La entrega consiste en subir a MiriadaX únicamente el nombre de su cuenta en GitHub donde ha
+copiado con Fork el repositorio https://github.com/jquemada/cal_2com.
